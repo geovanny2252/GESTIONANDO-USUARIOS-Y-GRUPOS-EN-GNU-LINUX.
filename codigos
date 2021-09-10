@@ -1,0 +1,34 @@
+
+------Paso 1-------
+//entrar como root
+
+------Paso 2-------
+//crear un grupo
+root@debian> addgroup casa
+
+------Paso 3-------
+//visualizar grupos
+root@debian> cat /etc/group
+
+------Paso 4 -------
+//crear usuarios en el grupo
+
+//nombre de mamá
+root@debian> useradd Blanca
+
+//mi nombre 
+root@debian> useradd Dennis
+
+------Paso 5 -------
+//agregar los usuarios al grupo casa
+root@debian> adduser blanca casa
+root@debian> adduser dennis casa
+
+------Paso 6 -------
+//cambiar el nombre al grupo
+root@debian> groupmod -g 1004 -n familia casa
+
+------Paso 7 -------
+//visualizar el grupo y su usuarios
+root@debian> cat /etc/group
+
